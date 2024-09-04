@@ -26,7 +26,6 @@ class SignupActivity : AppCompatActivity() {
             val confirmPassword = etConfirmPassword.text.toString()
 
             if (password == confirmPassword) {
-                // Save user data and navigate to the Dashboard
                 val intent = Intent(this, DashboardActivity::class.java)
                 startActivity(intent)
                 finish()
